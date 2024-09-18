@@ -21,80 +21,19 @@
 <body onload="loadHTML('common/navbar.html', 'navbar-placeholder')">
     <!-- Navbar Placeholder -->
     <div id="navbar-placeholder"></div>
-
     <!-- Main Content Area -->
     <div class="container">
-        
         <!-- Cards Section -->
         <div id="postCards" class="row row-cols-1 row-cols-md-2 g-4">
-            
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body d-flex justify-content-between align-items-center">
-                        <h5 class="card-title mb-0">Data Structures and Algorithms</h5>
-                        <a href="../dsa/dsa.html" class="btn btn-primary">Read</a>
+                        <h5 class="card-title mb-0">Welcome to Magento World !.</h5>
+                        <a href="#" class="btn btn-primary">Read</a>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body d-flex justify-content-between align-items-center">
-                        <h5 class="card-title mb-0">Low Level Design</h5>
-                        <a href="../lld/lld.html" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body d-flex justify-content-between align-items-center">
-                        <h5 class="card-title mb-0">System Design</h5>
-                        <a href="../sd/sd.html" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body d-flex justify-content-between align-items-center">
-                        <h5 class="card-title mb-0">Programming Language : Java</h5>
-                        <a href="../java/java.html" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body d-flex justify-content-between align-items-center">
-                        <h5 class="card-title mb-0">DevOps and CI/CD</h5>
-                        <a href="../devops/devops.html" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body d-flex justify-content-between align-items-center">
-                        <h5 class="card-title mb-0">Cloud Concepts (AWS/GCP)</h5>
-                        <a href="../devops/cloud.html" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body d-flex justify-content-between align-items-center">
-                        <h5 class="card-title mb-0">Framework : Spring Boot</h5>
-                        <a href="../springboot/springboot.html" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body d-flex justify-content-between align-items-center">
-                        <h5 class="card-title mb-0">General</h5>
-                        <a href="../general/springboot.html" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-            
         </div>
-
     </div>
 
     <!-- Footer -->
@@ -118,10 +57,10 @@
         function performSearch() {
             let filter = document.getElementById('searchInput').value.toLowerCase();
             let cards = document.querySelectorAll('#postCards .card');
-        
+
             cards.forEach(card => {
                 let title = card.querySelector('.card-title').textContent.toLowerCase();
-                
+
                 if (title.includes(filter)) {
                     card.parentElement.style.display = '';
                 } else {
